@@ -63,7 +63,7 @@ INPUT:
   FORMAT: "RGB"
 DATALOADER:
   FILTER_EMPTY_ANNOTATIONS: False
-  SAMPLER_TRAIN: "RepeatFactorTrainingSampler"
+  SAMPLER_TRAIN: "TrainingSampler"
 VERSION: 2
 AUG:
   DETR: True
