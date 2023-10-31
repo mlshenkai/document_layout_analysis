@@ -51,7 +51,7 @@ def main():
     # Step 3: set device
     device = "cuda" if torch.cuda.is_available() else "cpu"
     cfg.MODEL.DEVICE = device
-
+    cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.7
     # Step 4: define model
     predictor = DefaultPredictor(cfg)
     
